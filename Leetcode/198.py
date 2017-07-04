@@ -12,7 +12,7 @@
 #f(k) = max( f(k-2) + nums[k], f(k-1) )
 
 
-def sumRange(nums,lenth):
+def robber(nums,lenth):
 	if lenth == 0:
 		return 0
 	if lenth == 1:
@@ -33,4 +33,4 @@ if __name__ == "__main__":
 #	num = int(raw_input().strip())
 	nums = [2, 6, 3, 5, 2, 1]
 	lenth=len(nums)
-	print sumRange(nums,lenth)
+	print robber(nums,lenth)
